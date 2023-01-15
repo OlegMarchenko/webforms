@@ -5,12 +5,13 @@
   margin: 0 auto;
   list-style: none;
   padding: 0;
+  transition: .2s all;
 }
 
 .list li {
   display: flex;
   align-items: center;
-  padding: 5px 10px;
+  padding: 10px;
   border: 1px solid #88839E;
   margin-bottom: 5px;
   border-radius: 3px;
@@ -25,6 +26,7 @@
 .list input {
   margin-right: 10px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .list-item {
@@ -57,10 +59,28 @@
   width: 100%;
   height: 100%;
   background: #88839E;
+  transition: .2s all;
 }
 
 .list-item input:checked + .custom-bg {
   background: #7A7593;
+}
+
+.list:hover li {
+  filter: blur(1px);
+}
+
+.list:hover .custom-bg {
+  background: #534880;
+}
+
+.list:hover .list-item:hover {
+  filter: blur(0);
+}
+
+.list:hover .list-item:hover .custom-bg {
+  background: #150077;
+  filter: blur(0);
 }
 
 
