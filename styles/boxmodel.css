@@ -39,7 +39,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: url("/images/bg.png") center no-repeat;
+  background: url("../images/bg.png") center no-repeat;
 }
 
 button {
