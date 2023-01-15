@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<svg>
+  <defs>
+    <symbol id="icon-camera" viewBox="0 0 32 32">
+      <path
+            d="M9.56 6.667l2.44-2.667h8l2.44 2.667h4.227c1.467 0 2.667 1.2 2.667 2.667v16c0 1.467-1.2 2.667-2.667 2.667h-21.333c-1.467 0-2.667-1.2-2.667-2.667v-16c0-1.467 1.2-2.667 2.667-2.667h4.227zM9.333 17.333c0 3.68 2.987 6.667 6.667 6.667s6.667-2.987 6.667-6.667c0-3.68-2.987-6.667-6.667-6.667s-6.667 2.987-6.667 6.667zM16 21.6c2.356 0 4.267-1.91 4.267-4.267s-1.91-4.267-4.267-4.267c-2.356 0-4.267 1.91-4.267 4.267s1.91 4.267 4.267 4.267z"></path>
+    </symbol>
+    <symbol id="icon-trash" viewBox="0 0 32 32">
+      <path
+            d="M8 25.333c0 1.467 1.2 2.667 2.667 2.667h10.667c1.467 0 2.667-1.2 2.667-2.667v-16h-16v16zM25.333 5.333h-4.667l-1.333-1.333h-6.667l-1.333 1.333h-4.667v2.667h18.667v-2.667z"></path>
+    </symbol>
+  </defs>
+</svg>
+
+
+
+<main>
+  <div class="form-holder">
+    <h1>Create an Account</h1>
+    <form class="form">
+
+      <!--Name and Surname-->
+      <div class="form-group form-group-2col">
+        <div class="form-group-input">
+          <label for="firstname">First Name</label>
+          <input id="firstname" type="text" required>
+        </div>
+        <div class="form-group-input">
+          <label for="lastname">Last Name</label>
+          <input id="lastname" type="text">
+        </div>
+      </div>
+
+      <!--Email-->
+      <div class="form-group">
+        <div class="form-group-input">
+          <label for="email">E-mail</label>
+          <input id="email" type="email">
+          <span class="form-tooltip">We'll never share your email with anyone else.</span>
+        </div>
+      </div>
+
+      <!--Sex-->
+      <div class="form-group form-group-radio-btns">
+
+        <div class="form-group-radio">
+          <input type="radio" id="male"
+                 name="sex" value="male">
+          <span></span>
+          <label for="male">Male</label>
+        </div>
+
+        <div class="form-group-radio">
+          <input class="form-input" type="radio" id="female"
+                 name="sex" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <!--Location-->
+      <div class="form-group form-group-2col">
+        <div class="form-group-select">
+          <label for="country">Country</label>
+          <select class="form-input form-input-select" name="country" id="country">
+            <option>Select</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="france">France</option>
+            <option value="poland">Poland</option>
+          </select>
+        </div>
+
+        <div class="form-group-input">
+          <label for="city">City</label>
+          <input id="city" type="text">
+        </div>
+      </div>
+
+
+      <button type="submit">Sign up</button>
+
+    </form>
+
+    <svg class="icon icon-camera">
+      <use xlink:href="#icon-camera"></use>
+    </svg>
+
+    <svg class="icon icon-trash">
+      <use xlink:href="#icon-trash"></use>
+    </svg>
+
+    <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="/">Terms of
+      Use</a> and <a href="/">Privacy Policy</a>.</p>
+
+    <p>Have an account? <a href="/">Log In</a></p>
+  </div>
+</main>
+
+
+</body>
+</html>
