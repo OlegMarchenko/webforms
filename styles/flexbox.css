@@ -1,0 +1,104 @@
+
+
+.box {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.box__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.box__item--red {
+  background: red;
+}
+
+.box__item--green {
+  background: green;
+}
+
+.box__item--blue {
+  background: blue;
+}
+
+.box__item--purple {
+  background: purple;
+}
+
+.box__item--brown {
+  background: saddlebrown;
+}
+
+.box__one {
+  justify-content: space-between;
+}
+
+.box__two {
+  justify-content: space-around;
+}
+
+.box__three {
+  justify-content: space-evenly;
+}
+
+.box__four {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.box__five {
+  /*flex-direction: column;*/
+  flex-direction: column-reverse;
+}
+
+.box__six {
+
+}
+
+.box__six .box__item--blue {
+  order: 1;
+}
+
+.box__six .box__item--green {
+  order: 2;
+}
+
+.box__six .box__item--purple {
+  order: 3;
+}
+
+.box__six .box__item--red {
+  order: 4;
+}
+
+.box__six .box__item--brown {
+  order: 5;
+}
+
+.box__seven {
+  flex-wrap: wrap;
+}
+
+.box__seven .box__item {
+  width: 415px;
+}
+
+.box__eight {
+  height: 300px;
+  border: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+.box__eight .box__item--red {
+  align-self: center;
+}
+
+.box__eight .box__item--green {
+  align-self: end;
+}
