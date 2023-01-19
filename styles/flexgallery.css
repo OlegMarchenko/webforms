@@ -1,4 +1,13 @@
 
+body {
+  background: #222;
+  transition: .2s all;
+}
+
+.nav-list__item a {
+  color: #b6b6b6;
+}
+
 .list {
   max-width: 900px;
   width: 100%;
@@ -10,7 +19,7 @@
 
 .list__item {
   flex: 1;
-  transition: .5s all;
+  transition: .7s all;
 }
 
 .list__item:hover {
