@@ -10,6 +10,9 @@
 .card-list__item {
   flex: 1;
   position: relative;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding-bottom: 15px;
 }
 
 .card-list__top {
@@ -24,14 +27,18 @@
   display: block;
   width: 100%;
   height: inherit;
+  object-fit: contain;
 }
 
 .card-list__name {
   font: 700 18px / 22px 'Arial', sans-serif;
+  margin-bottom: 3px;
+  margin-left: 15px;
 }
 
 .card-list__position {
   font: 300 18px / 22px 'Arial', sans-serif;
+  margin-left: 15px;
 }
 
 .card-list__socials {
@@ -64,7 +71,6 @@
   cursor: pointer;
   transition: .2s all;
 }
-
 
 .card-list__socials svg {
   width: 20px;
