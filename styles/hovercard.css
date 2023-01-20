@@ -25,9 +25,11 @@
 
 .card-list__photo {
   display: block;
-  width: 100%;
+  width: calc(100% - 20px);
   height: inherit;
   object-fit: contain;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .card-list__name {
