@@ -1,0 +1,55 @@
+
+.city-list__item--lisbon {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.city-list__item--paris {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.city-list__item--belgrade {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.city-list__item--venice {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.city-list__item--telaviv {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.city-list__item--cair {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.city-list__item--newyork {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.city-list__item--delhi {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.city-list__item--francisco {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.city-list__item--tokyo {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.city-list__item--sydney {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
