@@ -1,0 +1,115 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #222;
+  padding: 50px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #F7F7F7;
+  letter-spacing: 1px;
+}
+
+.nav-list__item a {
+  color: #F7F7F7;
+}
+
+.fontello,
+.icomoon-sprite {
+  display: grid;
+  grid-template-columns: repeat(5, 170px);
+  grid-gap: 50px;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 100px;
+}
+
+.fontello li,
+.icomoon-sprite li {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-facebook:before,
+.icon-instagram:before,
+.icon-linkedin:before,
+.icon-telegram:before,
+.icon-twitter:before {
+  margin: 0;
+}
+
+
+/* Fontello */
+.fontello i {
+  font-size: 145px;
+  color: #F7F7F7;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.fontello .icon-facebook:hover {
+  color: #02a6f8;
+  text-shadow: 0 0 25px #02a6f8;
+}
+
+.fontello .icon-instagram:hover {
+  color: #ff00fa;
+  text-shadow: 0 0 25px #ff00fa;
+}
+
+.fontello .icon-linkedin:hover {
+  color: #002aff;
+  text-shadow: 0 0 25px #002aff;
+}
+
+.fontello .icon-telegram:hover {
+  color: #5ebdef;
+  text-shadow: 0 0 25px #5ebdef;
+}
+
+.fontello .icon-twitter:hover {
+  color: #00f8ff;
+  text-shadow: 0 0 25px #00f8ff;
+}
+
+
+/* Icomoon Sprite*/
+.icomoon-sprite svg {
+  transition: .3s all;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.icomoon-sprite .icon-facebook:hover {
+  fill: #02a6f8;
+  filter: drop-shadow(0px 0px 15px #02a6f8);
+}
+
+.icomoon-sprite .icon-instagram:hover {
+  fill: #ff00fa;
+  filter: drop-shadow(0px 0px 15px #ff00fa);
+}
+
+.icomoon-sprite .icon-linkedin:hover {
+  fill: #002aff;
+  filter: drop-shadow(0px 0px 15px #002aff);
+}
+
+.icomoon-sprite .icon-telegram:hover {
+  fill: #5ebdef;
+  filter: drop-shadow(0px 0px 15px #5ebdef);
+}
+
+.icomoon-sprite .icon-twitter:hover {
+  fill: #00f8ff;
+  filter: drop-shadow(0px 0px 15px #00f8ff);
+}
+
+
+

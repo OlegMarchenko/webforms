@@ -1,8 +1,17 @@
 
+
+h1 {
+  font: 24px / 32px 'MontserratSemiBold', 'Arial', sans-serif;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
 .form-holder {
   max-width: 570px;
   width: 100vw;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   background-color: #fff;
   padding: 35px 36px 16px;
   border: 1px solid #ccc;
@@ -12,8 +21,9 @@
 
 label {
   display: block;
-  font: 400 15px / 22px 'Arial', sans-serif;
+  font: 15px / 22px 'GothamLight', 'Arial', sans-serif;
   color: #545454;
+  margin-bottom: 3px;
 }
 
 .form-group-input input,
@@ -24,6 +34,7 @@ label {
   height: 38px;
   outline: none;
   padding: 0 15px;
+  font: 16px / 22px 'MontserratLight', 'Arial', sans-serif;
 }
 
 .form-group-input input:focus,
@@ -59,9 +70,12 @@ label {
 
 .form-tooltip {
   display: block;
-  font-size: 13px;
-  line-height: 18px;
+  font: 14px / 18px 'GothamThin', 'Arial',  sans-serif;
   letter-spacing: -0.1px;
   color: #969696;
   margin-top: 8px;
+}
+
+.form-privacy {
+  font: 16px / 22px 'MontserratLight', 'Arial', sans-serif;
 }
