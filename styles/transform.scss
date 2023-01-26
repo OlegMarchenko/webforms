@@ -1,0 +1,96 @@
+
+$bgcolor: indigo;
+
+
+body {
+  padding: 100px 30px;
+}
+.transform-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  grid-gap: 30px;
+
+}
+
+.transform-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F7F7F7;
+  transition: .3s all;
+  border-radius: 3px;
+  border: 1px solid tomato;
+  background: $bgcolor;
+
+  //  rotateX
+  &:nth-child(1) {
+    &:hover {
+      transform: rotateX(60deg);
+    }
+  }
+
+  //  rotateY
+  &:nth-child(2) {
+    &:hover {
+      transform: rotateY(60deg);
+    }
+  }
+
+  //  rotateZ
+  &:nth-child(3) {
+    &:hover {
+      transform: rotateZ(60deg);
+    }
+  }
+
+  // transform translate
+  &:nth-child(4) {
+    &:hover {
+      transform: translate(12px, 50%); // X and Y
+    }
+  }
+
+  // transform scaleX
+  &:nth-child(5) {
+    &:hover {
+      transform: scaleX(1.5);
+    }
+  }
+
+  // transform scaleY
+  &:nth-child(6) {
+    &:hover {
+      transform: scaleY(1.5);
+    }
+  }
+
+  // transform scale
+  &:nth-child(7) {
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  // transform skew
+  &:nth-child(8) {
+    &:hover {
+      transform: skew(20deg, 20deg);
+    }
+  }
+
+  // transform skewX
+  &:nth-child(9) {
+    &:hover {
+      transform: skewX(30deg);
+    }
+  }
+
+  // transform skewY
+  &:nth-child(10) {
+    &:hover {
+      transform: skewY(30deg);
+    }
+  }
+
+}
