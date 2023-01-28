@@ -1,0 +1,22 @@
+@use "variables";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: variables.$mainFont;
+  background: variables.$bg;
+  color: variables.$text;
+  padding: 100px 30px;
+}

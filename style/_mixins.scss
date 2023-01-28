@@ -1,0 +1,10 @@
+@use "variables";
+
+
+@mixin gridItem($color: variables.$bgDefault) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color;
+  @extend %defaultBorder;
+}

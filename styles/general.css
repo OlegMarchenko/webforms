@@ -42,6 +42,9 @@ header {
 .nav-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 30px
 }
 
 .nav-list__item a {

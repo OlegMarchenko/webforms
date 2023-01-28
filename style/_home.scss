@@ -1,0 +1,59 @@
+@use "variables";
+@use "mixins";
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+  grid-gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+
+  &__item {
+    @include mixins.gridItem;
+    &:first-child {
+      background: variables.$bgAccent;
+    }
+
+    &:nth-child(2) {
+      @include mixins.gridItem(yellow);
+    }
+
+    &:last-child {
+      background: variables.$bgError;
+    }
+  }
+
+  &-inner {
+    &__item {
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          background-color: darken(variables.$bgSky, ($i - 1) * 10%);
+        }
+      }
+
+      /*&:nth-child(1) {
+        background-color: darken(variables.$bgSky, 10%);
+      }
+      &:nth-child(2) {
+        background-color: darken(variables.$bgSky, 20%);
+      }
+      &:nth-child(3) {
+        background-color: darken(variables.$bgSky, 30%);
+      }
+      &:nth-child(4) {
+        background-color: darken(variables.$bgSky, 40%);
+      }*/
+    }
+  }
+
+}
+
+
+.absolute {
+  background: tomato;
+  width: 100px;
+  height: 100px;
+  @extend %absoluteCenter;
+}
