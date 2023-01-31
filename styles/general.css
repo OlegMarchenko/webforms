@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+ }
+
 ul, ol {
   padding: 0;
   list-style: none;

@@ -64,9 +64,37 @@ label {
   margin-right: 20px;
 }
 
-.form-group-radio input {
-  margin-right: 8px;
+.form-group-radio {
+  position: relative;
 }
+
+.form-group-radio input {
+  position: absolute;
+  opacity: 0;
+}
+
+.form-group-radio label {
+  padding-left: 28px;
+  box-sizing: border-box;
+}
+
+.form-group-radio label::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #E4E4E4;
+  transition: .2s all;
+}
+
+.form-group-radio input:checked + label::before {
+  border: 6px solid #007BFF;
+}
+
+
 
 .form-tooltip {
   display: block;
@@ -78,4 +106,39 @@ label {
 
 .form-privacy {
   font: 16px / 22px 'MontserratLight', 'Arial', sans-serif;
+}
+
+
+.form-group-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.form-group-checkbox label  {
+  position: relative;
+  display: inline-flex;
+  padding-right: 28px;
+}
+
+.form-group-checkbox label::after {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  transition: .2s all;
+}
+
+.form-group-checkbox input:checked + label::after {
+  width: 13px;
+  border-radius: 0;
+  top: -4px;
+  border-top: none;
+  border-left: none;
+  border-width: 2px;
+  transform: rotate(45deg);
+  border-color: green;
 }
