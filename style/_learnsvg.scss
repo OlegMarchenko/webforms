@@ -1,0 +1,54 @@
+
+.circle-list {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-auto-rows: 150px;
+  grid-gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  &__item {
+    > svg {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transform: rotate(-90deg);
+      circle {
+        fill: #333;
+        stroke: red;
+        stroke-width: 32;
+      }
+    }
+  }
+}
+
+.gradient {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto 50px;
+  > svg {
+    width: inherit;
+    height: inherit;
+    color: #00ffd0;
+    linearGradient {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.gradient-box {
+  width: 500px;
+  height: 200px;
+  padding: calc(10px + 1em);
+  margin: 0 auto;
+
+  background: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg">\
+  <linearGradient id="g" gradientTransform="rotate(45)">\
+  <stop stop-color="red"></stop>\
+  <stop stop-color="indigo" offset=".5"></stop>\
+  <stop stop-color="indigo" offset=".8"></stop>\
+  <stop stop-color="%230bf" offset="1"></stop>\
+  </linearGradient>\
+  <rect width="100%" height="100%" style="stroke: url(%23g); stroke-width: 20px; fill: none; " />\
+  </svg>');
+}
