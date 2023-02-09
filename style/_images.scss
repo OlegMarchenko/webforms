@@ -1,0 +1,26 @@
+
+body {
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1 {
+  color: #222;
+  font-size: 30px;
+}
+
+.section-main {
+  background: #333 url("./../images/bg-image.jpg") top center / 100% 100% no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  @media screen and (min-width: 768px) {
+    background: #333 url("./../images/bg-image__tablet.jpg") top center / 1280px auto no-repeat;
+  }
+  @media screen and (min-width: 768px) {
+    background: #333 url("./../images/bg-image__desk.jpg") top center / 100vw 100vh no-repeat;
+  }
+}
