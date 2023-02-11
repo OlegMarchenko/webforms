@@ -1,0 +1,129 @@
+
+
+// @keyframes Ця властивість використовується для визначення анміції
+
+// animation Це скорочена властивість, яка використовується для вставновлення усіх інших властивостей
+
+// animation-name Імʼя анімації
+
+// animation-delay ms Час початку анімації
+
+// animation-duration ms Час скільки триває анімація
+
+// animation-direction reverse / alternate / alternate-reverse Як має відтворюватися анімація, вперед назад або по черзі
+
+// animation-play-state paused / running Анімація або призупинена або запущена
+
+// animation-iteration-count
+
+@keyframes simple-square-to-circle {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 10px;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+
+.simple-shape {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 50px;
+}
+
+.one {
+  background-color: deeppink;
+  animation: simple-square-to-circle 2s 0s linear infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes simple-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.two {
+  background-color: #00ffd0;
+  animation: simple-rotate 2s linear infinite alternate;
+}
+
+@keyframes simple-scale {
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.three {
+  background-color: tomato;
+  animation: simple-scale 2s linear infinite alternate;
+}
+
+@keyframes simple-move {
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.four {
+  background-color: #9100fa;
+  animation: jello; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*-------------------------------------------------*/
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.text-animation {
+  margin-bottom: 100px;
+  h1 {
+    color: #fff;
+    font: bold 32px Courier, monospace;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.05em solid;
+    animation: typing 3s steps(15), caret 1s;
+  }
+}
+
+/*-------------------------------------------------*/
+
+
+@keyframes panoramic {
+  to {
+    background-position: 100% 0;
+  }
+}
+
+
+.panoramic {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto 100px;
+  background: url("https://picsum.photos/1024/400");
+  background-size: auto 100%;
+  animation: panoramic 3s linear infinite alternate;
+  animation-play-state: paused;
+  &:hover {
+    animation-play-state: running;
+  }
+}
+
+
